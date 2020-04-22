@@ -24,8 +24,6 @@ class TestE2E(unittest.TestCase):
               cidr_block                            = "1.1.0.0/16"
               public_subnet_cidr_block              = "1.1.0.0/24"
               SGCIDRs                               = "${var.SGCIDRs}"
-              haproxy_private_ip                    = "1.1.1.1"
-              haproxy_private_ip2                   = "1.1.1.2"
               s3_bucket_name                        = "abcd"
               s3_bucket_acl                         = "private"
               log_archive_s3_bucket                 = "abcd"
@@ -41,7 +39,6 @@ class TestE2E(unittest.TestCase):
               route_table_cidr_blocks               = {
                 ops_cidr = "1234"
                 apps_cidr = "1234"
-                acp_prod = "1234"
                 acp_ops = "1234"
                 acp_cicd = "1234"
               }
