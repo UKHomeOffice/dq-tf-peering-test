@@ -1,8 +1,8 @@
 variable "cidr_block" {}
 variable "public_subnet_cidr_block" {}
-variable "s3_bucket_name" {}
-variable "s3_bucket_acl" {}
-variable "log_archive_s3_bucket" {}
+# variable "s3_bucket_name" {}
+# variable "s3_bucket_acl" {}
+# variable "log_archive_s3_bucket" {}
 variable "az" {}
 
 variable "naming_suffix" {
