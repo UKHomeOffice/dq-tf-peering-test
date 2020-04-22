@@ -10,13 +10,17 @@ variable "naming_suffix" {
   description = "Naming suffix for tags, value passed from dq-tf-apps"
 }
 
-variable "haproxy_subnet_cidr_block" {
-  default = "10.3.0.0/24"
-}
-
-variable "haproxy_private_ip" {
-  default = "10.3.0.10"
-}
+# variable "haproxy_subnet_cidr_block" {
+#   default = "10.3.0.0/24"
+# }
+#
+# variable "haproxy_private_ip" {
+#   default = "10.3.0.11"
+# }
+#
+# variable "haproxy_private_ip2" {
+#   default = "10.3.0.12"
+# }
 
 variable "region" {
   default = "eu-west-2"
