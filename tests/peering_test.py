@@ -24,8 +24,6 @@ class TestE2E(unittest.TestCase):
               cidr_block                            = "1.1.0.0/16"
               public_subnet_cidr_block              = "1.1.0.0/24"
               SGCIDRs                               = "${var.SGCIDRs}"
-              s3_bucket_acl                         = "private"
-              log_archive_s3_bucket                 = "abcd"
               az                                    = "eu-west-2a"
               naming_suffix                         = "preprod-dq"
               vpc_peering_connection_ids            = {
