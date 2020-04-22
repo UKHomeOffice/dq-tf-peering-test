@@ -14,9 +14,9 @@ output "peering_route_table_id" {
 #   value = "${var.haproxy_subnet_cidr_block}"
 # }
 
-output "iam_roles" {
-  value = "${concat(module.haproxy_instance.iam_roles)}"
-}
+# output "iam_roles" {
+#   value = "${concat(module.haproxy_instance.iam_roles)}"
+# }
 
 # output "haproxy_private_ip" {
 #   value = "${var.haproxy_private_ip}"
@@ -26,10 +26,10 @@ output "iam_roles" {
 #   value = "${var.haproxy_private_ip2}"
 # }
 
-output "haproxy_config_bucket" {
-  value = "${module.haproxy_instance.haproxy_config_bucket}"
-}
-
-output "haproxy_config_bucket_key" {
-  value = "${module.haproxy_instance.haproxy_config_bucket_key}"
-}
+# output "haproxy_config_bucket" {
+#   value = "${module.haproxy_instance.haproxy_config_bucket}"
+# }
+#
+# output "haproxy_config_bucket_key" {
+#   value = "${module.haproxy_instance.haproxy_config_bucket_key}"
+# }
