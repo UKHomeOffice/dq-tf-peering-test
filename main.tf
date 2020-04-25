@@ -54,10 +54,10 @@ resource "aws_route_table" "peering_route_table" {
     vpc_peering_connection_id = "${var.vpc_peering_connection_ids["peering_and_apps"]}"
   }
 
-  route {
-    cidr_block                = "${var.route_table_cidr_blocks["acp_prod"]}"
-    vpc_peering_connection_id = "${var.vpc_peering_connection_ids["peering_and_acpprod"]}"
-  }
+  # route {
+  #   cidr_block                = "${var.route_table_cidr_blocks["acp_prod"]}"
+  #   vpc_peering_connection_id = "${var.vpc_peering_connection_ids["peering_and_acpprod"]}"
+  # }
 
   route {
     cidr_block     = "0.0.0.0/0"
