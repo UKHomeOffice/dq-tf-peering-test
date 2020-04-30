@@ -1,8 +1,8 @@
 variable "cidr_block" {}
 variable "public_subnet_cidr_block" {}
-variable "s3_bucket_name" {}
-variable "s3_bucket_acl" {}
-variable "log_archive_s3_bucket" {}
+# variable "s3_bucket_name" {}
+# variable "s3_bucket_acl" {}
+# variable "log_archive_s3_bucket" {}
 variable "az" {}
 
 variable "naming_suffix" {
@@ -14,13 +14,13 @@ variable "haproxy_subnet_cidr_block" {
   default = "10.3.0.0/24"
 }
 
-variable "haproxy_private_ip" {
-  default = "10.3.0.11"
-}
-
-variable "haproxy_private_ip2" {
-  default = "10.3.0.12"
-}
+# variable "haproxy_private_ip" {
+#   default = "10.3.0.11"
+# }
+#
+# variable "haproxy_private_ip2" {
+#   default = "10.3.0.12"
+# }
 
 variable "region" {
   default = "eu-west-2"
