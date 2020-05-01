@@ -26,10 +26,10 @@ output "haproxy_subnet_cidr_block" {
 #   value = "${var.haproxy_private_ip2}"
 # }
 
-# output "haproxy_config_bucket" {
-#   value = "${module.haproxy_instance.haproxy_config_bucket}"
-# }
-#
-# output "haproxy_config_bucket_key" {
-#   value = "${module.haproxy_instance.haproxy_config_bucket_key}"
-# }
+output "haproxy_config_bucket" {
+  value = "${module.haproxy_instance.haproxy_config_bucket}"
+}
+
+output "haproxy_config_bucket_key" {
+  value = "${module.haproxy_instance.haproxy_config_bucket_key}"
+}
