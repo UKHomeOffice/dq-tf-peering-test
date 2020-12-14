@@ -1,5 +1,6 @@
 module "haproxy_instance" {
   source                    = "github.com/ukhomeoffice/dq-tf-peering-haproxy"
+  instance_type             = var.namespace == "prod" ? var.instance_type_prod : var.instance_type_notprod
   peeringvpc_id             = aws_vpc.peeringvpc.id
   route_table_id            = aws_route_table.peering_route_table.id
   haproxy_subnet_cidr_block = var.haproxy_subnet_cidr_block
