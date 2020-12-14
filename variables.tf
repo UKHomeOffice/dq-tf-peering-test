@@ -52,3 +52,6 @@ variable "SGCIDRs" {
   type        = list(string)
   default     = []
 }
+
+variable "namespace" {
+}
