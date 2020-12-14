@@ -53,3 +53,5 @@ variable "SGCIDRs" {
   default     = []
 }
 
+variable "namespace" {
+}
