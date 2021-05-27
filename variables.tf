@@ -25,6 +25,10 @@ variable "haproxy_subnet_cidr_block" {
   default = "10.3.0.0/24"
 }
 
+variable "haproxy_subnet_cidr_block_2b" {
+  default = "10.3.1.0/24"
+}
+
 variable "haproxy_private_ip" {
   default = "10.3.0.11"
 }
