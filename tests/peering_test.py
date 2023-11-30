@@ -15,7 +15,7 @@ class TestE2E(unittest.TestCase):
             }
 
             variable "SGCIDRs" {
-              type = "list"
+              type = list(string)
               default = ["1.1.0.0/24", "1.1.0.0/24", "1.1.0.0/24", "1.1.0.0/24"]
             }
 
@@ -24,7 +24,7 @@ class TestE2E(unittest.TestCase):
               source = "./mymodule"
 
               providers = {
-                aws = "aws"
+                aws = aws
               }
 
 
